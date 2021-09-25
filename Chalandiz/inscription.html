@@ -1,0 +1,89 @@
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>CHALANDIZ</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="inscription.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div id="header">
+        <div class="dropdown">
+            <img src="photo/logo.JPG" id="logoHeader" > 
+                <img class="dropbtn" src="photo/menu.png">
+            <div class="dropdown-content">
+                <a href="index.html">
+                    <i class="fa fa-home" style="display: inline-block; font-size: 30px; float: left;"> </i> Référencement automatique
+                </a>
+        
+                <a href="inscription.html">
+                    <i class="fa fa-user" style="display: inline-block; font-size: 30px; float: left;"> </i> S'inscrire
+                </a>
+        
+                <a href="connexion.html">
+                    <i class="fa fa-sign-out" style="display: inline-block; font-size: 30px; float: left;"> </i> Se connecter
+                </a>
+        
+        
+            </div>
+          </div>
+      <div class="containerNav" >
+
+        <a href="index.html">
+            <i class="fa fa-home" style="display: block; font-size: 30px;"> </i>
+    
+    </a>
+    </div>
+    
+
+    
+    <div class="containerNav" style="background-color: #0076fe;">
+    <a href="inscription.html">
+        <i class="fa fa-user" style="display: block; font-size: 30px;"> </i>
+    </a>
+    </div>
+    <div class="containerNav">
+    <a href="connexion.html">
+        <i class="fa fa-sign-out" style="display: block; font-size: 30px;"> </i>
+        
+    </a>
+
+</div>
+	</div>
+
+
+    <div class="conteneur">
+        <h1>Formulaire d'inscription</h1>
+        <form action="inscription.php" id="formulaire">
+
+            <label>Nom</label>
+            <input type="text" id="nom">
+
+            <label>Prénom</label>
+            <input type="text" id="prenom">
+
+            <label>Adresse mail</label>
+            <input type="text" id="mail" >
+
+            <label>Mot de passe</label>
+            <input type="password" >
+
+            <label>Comfirmez mot de passe</label>
+            <input type="password" id="mdp">
+            <label>Voir mot de passe</label>
+            <input type="checkbox" onclick="showMDP()">
+           
+        </form>
+
+        <button id="validation" class="next" onclick="inscription()">VALIDEZ<i class="fa fa-arrow-right"></i></button>
+
+    </div>
+    </body>
+    </html>
+    <script src="inscription.js"></script>

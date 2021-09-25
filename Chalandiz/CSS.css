@@ -1,0 +1,557 @@
+
+body {
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+#header{
+  background: RGB(225, 229, 232);
+  width: 100%;
+  height: 10%;
+  display: block;
+  
+}
+iframe{
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.containerNav{
+  display: inline-flex;
+    height: 100%;
+    text-align: center;
+    width: 32%;
+    
+}
+
+
+#header a{
+   /* haut | droit | bas | gauche */
+  margin: 5% auto auto auto;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
+
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+#PrixTotal{
+  font-size: 50px;
+  color: #ff0000a1;
+}
+.messageERROR {
+  margin: 0px;
+  display: none;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: #f2dede;
+  color: red;
+  font-size: 16px;
+  animation: fadeERROR 0.7s;
+}
+
+#Introduction h1 {
+  margin-top: 20%;
+}
+#Introduction img{
+  display: none;
+}
+#partie2 h1 {
+  margin-top: 2%;
+}
+#partie2 a {
+  margin-top: 2%;
+  
+}
+.forfait {
+  display: inline-block;
+  color: red;
+  background-color: FAFAFA;
+  border: 1px solid black;
+  padding: 45px;
+  margin: 0px 40px 30px 10px;
+  border-radius: 0.5em;
+  border: none;
+  width: 300px;
+  text-align: center;
+  box-shadow:  30px 30px 30px #e5e5e5;
+  z-index: -1;
+}
+.forfait:hover{
+  transform: scale(1.1); 
+}
+.forfait h1 {
+  font-size: 25px;
+  color: #54595f;
+}
+.forfait p{
+  margin-top: 1px;
+  color: grey;
+  margin-bottom: 1px;
+}
+.forfait h2 {
+  font-size: 3em;
+  color: navy;
+  font-weight: 700;
+  font-family: open sans;
+  margin-top: 1px;
+}
+.forfait a {
+  color: #54595f;
+  margin-bottom: 10px;
+  font-size: 1.7em;
+  
+}
+.forfait span{
+  font-size: 24px;
+}
+.reserver{
+  margin: auto;
+  background-color: #fb4a00;
+  border-radius: 0px;
+  margin-top: 30px;
+  width: 60%;
+  height: 50px;
+  padding: 10px 5px 10px 5px;
+  font-size: 20px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.reserver:before, .reserver:after {
+  /* transition-property: transform, opacity; */
+  /* transition-duration: 1.2s; */
+  /* transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1); */
+  /* box-sizing: border-box; */
+  position: initial;
+}
+
+
+.forfait button {
+  
+  /* haut | droit | bas | gauche */
+
+  /*
+  padding: 5px 10px 5px 10px;
+display: block;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: RGB(0, 118, 254);
+  border: 1px solid #bdc3c7;
+  color: white;
+  cursor: pointer;*/
+}
+.imgForfait {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+#barProgress {
+  width: 30%;
+  height: 10px;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  -webkit-appearance: none;
+  margin-bottom: 50px;
+}
+::-webkit-progress-bar {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+::-webkit-progress-value {
+  background-color: RGB(0, 118, 254);
+  border-radius: 10px;
+  transition: width 0.5s;
+}
+i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.TotalPrice {
+  text-align: center;
+  display: none;
+}
+
+.conteneur {
+  width: 100%;
+  text-align: center;
+  display: none;
+  animation: fade 1.5s;
+  margin-top: 40px;
+}
+#dateDeb{
+  margin-bottom: 20px;
+}
+
+
+@keyframes fadeERROR {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disparitionDate {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.containerDate2 {
+  display: block;
+}
+#containerOffers {
+  display: none;
+  animation: fade 0.7s;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+a {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+input[type="radio"] {
+  display: block;
+  width: 100px;
+  height: 35px;
+  margin: auto;
+}
+
+input[type="checkbox"] {
+  display: block;
+  margin: auto;
+}
+
+input,
+select {
+  padding: 4px;
+  width: 400px;
+  height: 52px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px solid #bdc3c7;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus {
+
+transform: scale(1.1); 
+
+
+}
+
+select{
+  text-align-last: center;
+}
+.next {
+  display: block;
+  margin: 50px auto auto auto;
+  padding: 20px 40px 20px 40px;
+  border-radius: 4px;
+  font-size: 27px;
+  background-color: #0076fe;
+  border: 1px solid #bdc3c7;
+  color: white;
+  cursor: pointer;
+  width: 450px;
+  height: 100px;
+}
+
+.next:hover{
+ background-color: #0077ffde;;
+ border: 1px solid white;
+ transform: scale(1.1); 
+ opacity: 80%;
+}
+
+
+
+
+.prev {
+  display: block;
+  margin-top: 20px;
+  background-color: Transparent;
+  /* haut | droit | bas | gauche */
+  padding: 20px 40px 20px 40px;
+  border-radius: 4px;
+  font-size: 20px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+.btnFGB{
+  display: inline-block;
+    margin: 30px 40px 60px 40px;;
+    padding: 20px 40px 20px 40px;
+    border-radius: 4px;
+    font-size: 27px;
+    background-color: RGB(0, 118, 254);
+    border: 1px solid #bdc3c7;
+    color: white;
+    cursor: pointer;
+    width: 250px;
+    height: 80px;
+}
+
+.containerINPUT {
+  display: block;
+  margin-bottom: 30px;
+}
+#wb {
+  width: 35px;
+    height: 30px;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+#somelabel {
+    padding-left: 3px;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+
+
+.lblFacture {
+  font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: RGB(0, 118, 254);
+  color: white;
+  text-align: center;
+}
+
+.FicheGoogleMyBusiness {
+  display: none;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  
+}
+.ResumeDate{
+  display: inline-block;
+}
+.conteneurDateResume{
+  display: inline-block;
+  margin: 20px;
+}
+#partie6 > div > h1{
+  color: #f36f51;
+  font-size: 40px;
+}
+.Paiement {
+  display: block;
+  margin: 20px auto auto auto;
+  /* haut | droit | bas | gauche */
+  padding: 20px 40px 20px 40px;
+
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: #f36f51;
+  border: 1px solid #bdc3c7;
+  color: white;
+  cursor: pointer;
+}
+
+/* CSS MOBILE */
+@media all and (max-device-width: 750px) {
+  .dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+}
+ .dropdown {
+    display: block;
+    text-align: right;
+  }
+  #logoHeader{
+    margin-top: 9px;
+    margin-left: 20px;
+    width: 70px;
+    height: 40px;
+    float: left;
+    margin-bottom: 5px;
+
+  }
+  .dropbtn {
+    height: 30px;
+    width: 40px;
+    padding: 0;
+    color: white;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+
+  }
+
+  .containerNav{
+    display: none;
+  }
+
+}
+
+
+@media all and (max-device-width: 425px) {
+ #imageFond{
+  height: 150px !important;
+ }
+#header{
+  height: 60px;
+}
+#Introduction h1 {
+  margin-top: 38%;
+}
+  #Introduction img {
+    width: 70%;
+    height: 250px;
+  }
+   h1{
+  font-size: 22px;
+    margin : 20px 20px 40px 20px;
+  }
+  .logo {
+   /* width: 200px;
+    height: 150px;*/
+    display: none;
+  }
+
+  #barProgress {
+    width: 80%;
+    height: 20px;
+    margin-bottom: 30px;
+   
+  }
+  .forfait {
+    padding: 15px;
+    width: 70%;
+    display: block;
+    margin: auto;
+    color: red;
+    margin-bottom: 30px;
+
+  }
+
+  
+  .ChoixVille{
+    margin-top: 20px;
+  }
+
+  input[type="radio"] {
+    display: block;
+    width: 100px;
+    height: 35px;
+    margin: auto;
+}
+input, select{
+    width: 85%;
+    margin: auto;
+    height: 50px;
+}
+
+.conteneur {
+   
+    animation: fade 2s;
+    
+  }
+  table{
+    width: 90%;
+  }
+
+  .Paiement{
+    width: 90%;
+    padding: 20px 15px 20px 15px;
+    font-size: 17px;
+   
+  }
+  #introPartie2{
+    margin-top: 120px !important;
+  }
+  .next{
+    width: 300px;
+    font-size: 25px;
+    height: 70px;
+  }
+ 
+
+}

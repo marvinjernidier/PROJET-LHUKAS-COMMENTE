@@ -1,0 +1,63 @@
+- grossir les input 
+- changer l'icones au milieu
+- espacer les truc
+
+- grossir les conteneurs 
+- changer icones horloges 
+- grossir le textes 
+
+
+
+
+- grossir les input 
+- espacer input avec le titre 
+
+
+
+- rendre le truc google my businnes plus comprehensible
+- grossir les input et textes
+
+
+--------------------------
+
+
+mettre meme truc 
+
+
+6euro par jour selectionée
+
+
+
+revoir les calculs
+surcout de 20 pourcent pour baie mahaut et rien pour les autres
+voir dégradé linéaaire 
+regarder ombre 
+
+faire un button comme air caraibe
+
+
+couleur orange : #fb4a00
+
+
+
+
+button :    margin: auto;
+    background-color: #fb4a00;
+    border-radius: 0px;
+    margin-top: 30px;
+    width: 75%;
+    height: 50px;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+
+
+
+faire case a cocher établir au commmune au alentours
+
+
+faire condition augmentation de prix de 20% sii la ville selectionnée est :
+pap 
+les abymes 
+petit bourg 
+lamentin
+

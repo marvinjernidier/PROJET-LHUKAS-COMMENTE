@@ -1,0 +1,620 @@
+<html lang="fr">
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>CHALANDIZ</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="CSS.css">
+	<link rel="stylesheet" href="cssDate.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+	<div id="header">
+
+		<div class="dropdown">
+			<img src="photo/logo.JPG" id="logoHeader">
+			<img class="dropbtn" src="photo/menu.png">
+			<div class="dropdown-content">
+				<a href="index.html">
+					<i class="fa fa-home" style="display: inline-block; font-size: 30px; float: left;"> </i>
+					Référencement automatique
+				</a>
+
+				<a href="inscription.html">
+					<i class="fa fa-user" style="display: inline-block; font-size: 30px; float: left;"> </i> S'inscrire
+				</a>
+
+				<a href="connexion.html">
+					<i class="fa fa-sign-out" style="display: inline-block; font-size: 30px; float: left;"> </i> Se
+					connecter
+				</a>
+
+
+			</div>
+		</div>
+
+
+
+
+		<div class="containerNav" style="background-color: #0076fe;">
+
+			<a href="index.html">
+				<i class="fa fa-home" style="display: block; font-size: 30px;"> </i>
+
+			</a>
+		</div>
+
+
+
+		<div class="containerNav">
+			<a href="inscription.html">
+				<i class="fa fa-user" style="display: block; font-size: 30px;"> </i>
+			</a>
+		</div>
+		<div class="containerNav">
+			<a href="connexion.html">
+				<i class="fa fa-sign-out" style="display: block; font-size: 30px;"> </i>
+
+			</a>
+
+		</div>
+	</div>
+
+	<img style="width:100%;height: 400px;" id="imageFond" src="photo/test.png">
+
+	<div class="TotalPrice">
+
+		<p id="prix"> 0</p>
+		</p>
+	</div>
+
+
+
+	<div class="conteneur" id="Introduction" style="display: block;">
+		<img src="photo/logo.JPG">
+		<h1>
+			Vous voulez développez la visibilité de votre entreprise sur le web grâce au référencement automatique ?
+		</h1>
+
+		<button id="start" class="next" onclick="start()">COMMENCER<i class="fa fa-arrow-right"></i></button>
+
+
+
+	</div>
+
+
+	<div class="conteneur" id="partie2">
+		<img src="photo/clock.png" class="logo">
+		<h1 id="introPartie2">
+			Sélectionnez la date de début de votre opération commerciale
+		</h1>
+
+
+
+		<div class="containerDate2" id="containerDate">
+
+			<label>Veuillez choisir une date de début </label>
+			<iframe id="Iframe" src="test.html" width="100%" height="700" frameborder="0"></iframe>
+
+
+			
+		</div>
+
+
+
+		<div id="containerOffers">
+
+			<a>Sélectionnez une offre</a>
+			<div class="forfait">
+				<img src="photo/battery-min.svg" class="imgForfait">
+				<h1>Petite période</h1>
+				<p>A partir de</p>
+				<h2> 309€</h2>
+				<a> Forfait de 30 jours</a>
+
+
+				<button class="reserver" onclick="updateDuration(this,30,309)"> RESERVER</button>
+
+
+			</div>
+
+			<div class="forfait">
+				<img src="photo/battery-max.svg" class="imgForfait">
+				<h1>Longue période</h1>
+				<p>A partir de</p>
+				<h2> 280€<span> / Mois</span></h2>
+
+				<a> Forfait de 90 jours</a>
+
+
+
+
+				<button class="reserver" onclick="updateDuration(this,90,150)"> RESERVER</button>
+
+			</div>
+
+			<p class="messageERROR">Un ou plusieurs champs n’ont pas été rempli correctement</p>
+			
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+	<div class="conteneur" id="partie3">
+		<button class="prev" onclick="previous(3)"> <i class="fa fa-arrow-left"></i>Revenir à l'étape
+			Précedente</button>
+		<img src="photo/top.png" class="logo">
+		<h1>
+			Dans quelles villes souhaitez-vous apparaitre dans le top 5 Google ?
+		</h1>
+
+
+		<!--
+
+<input autocomplete="off" type="text" placeholder="Ville" name="City" id="City" />
+
+		-->
+
+
+
+		<div class="containerINPUT">
+
+			<select onchange="updateCity(this)" id="selectPrincipale">
+				<option value=" :0"> Sélectionnez une ville ( OBLIGATOIRE ) </option>
+				<option value="Anse-Bertrand (97121):0">Anse-Bertrand (97121)</option>
+				<option value="Baie-Mahault (97122):40">Baie-Mahault (97122)</option>
+				<option value="Baillif (97123):0">Baillif (97123)</option>
+				<option value="Basse-Terre (97100):0">Basse-Terre (97100)</option>
+				<option value="Bouillante (97125):0">Bouillante (97125)</option>
+				<option value="Capesterre-Belle-Eau (97130):0">Capesterre-Belle-Eau (97130)</option>
+				<option value="Capesterre-de-Marie-Galante (97140):0">Capesterre-de-Marie-Galante (97140)
+				</option>
+				<option value="Deshaies (97126):0">Deshaies (97126)</option>
+				<option value="Gourbeyre (97113):0">Gourbeyre (97113)</option>
+				<option value="Goyave (97128):0">Goyave (97128)</option>
+				<option value="Grand-Bourg (97112):0">Grand-Bourg (97112)</option>
+				<option value="La Désirade (97127):0">La Désirade (97127)</option>
+				<option value="Lamentin (97129):0">Lamentin (97129)</option>
+				<option value="Le Gosier (97190):0">Le Gosier (97190)</option>
+				<option value="Le Moule (97160):0">Le Moule (97160)</option>
+				<option value="Les Abymes (97139):0">Les Abymes (97139)</option>
+				<option value="Morne-à-l'Eau (97111):0">Morne-à-l'Eau (97111)</option>
+				<option value="Petit-Bourg (97170):0">Petit-Bourg (97170)</option>
+				<option value="Petit-Canal (97131):0">Petit-Canal (97131)</option>
+				<option value="Pointe-à-Pitre (97110):0">Pointe-à-Pitre (97110)</option>
+				<option value="Pointe-Noire (97116):0">Pointe-Noire (97116)</option>
+				<option value="Port-Louis (97117):0">Port-Louis (97117)</option>
+				<option value="Saint-Claude (97120):0">Saint-Claude (97120)</option>
+				<option value="Saint-François (97118):0">Saint-François (97118)</option>
+				<option value="Saint-Louis (97134):0">Saint-Louis (97134)</option>
+				<option value="Sainte-Anne (97180):0">Sainte-Anne (97180)</option>
+				<option value="Sainte-Rose (97115):0">Sainte-Rose (97115)</option>
+				<option value="Terre-de-Bas (97136):0">Terre-de-Bas (97136)</option>
+				<option value="Terre-de-Haut (97137):0">Terre-de-Haut (97137)</option>
+				<option value="Trois-Rivières (97114):0">Trois-Rivières (97114)</option>
+				<option value="Vieux-Fort (97141):0">Vieux-Fort (97141)</option>
+				<option value="Vieux-Habitants (97119):0">Vieux-Habitants (97119)</option>
+			</select>
+			<div class="ChoixVille">
+				<input id="wb" type="checkbox" onclick="elargissement(this)" />
+				<label for="wb" id="somelabel">Elargir aux communes aux alentours</label>
+			</div>
+
+
+		</div>
+
+
+
+		<div class="containerINPUT">
+
+			<select onchange="updateCity(this)">
+				<option value=" :0"> Sélectionnez une ville ( OBLIGATOIRE ) </option>
+				<option value="Anse-Bertrand (97121):0">Anse-Bertrand (97121)</option>
+				<option value="Baie-Mahault (97122):40">Baie-Mahault (97122)</option>
+				<option value="Baillif (97123):0">Baillif (97123)</option>
+				<option value="Basse-Terre (97100):0">Basse-Terre (97100)</option>
+				<option value="Bouillante (97125):0">Bouillante (97125)</option>
+				<option value="Capesterre-Belle-Eau (97130):0">Capesterre-Belle-Eau (97130)</option>
+				<option value="Capesterre-de-Marie-Galante (97140):0">Capesterre-de-Marie-Galante (97140)
+				</option>
+				<option value="Deshaies (97126):0">Deshaies (97126)</option>
+				<option value="Gourbeyre (97113):0">Gourbeyre (97113)</option>
+				<option value="Goyave (97128):0">Goyave (97128)</option>
+				<option value="Grand-Bourg (97112):0">Grand-Bourg (97112)</option>
+				<option value="La Désirade (97127):0">La Désirade (97127)</option>
+				<option value="Lamentin (97129):0">Lamentin (97129)</option>
+				<option value="Le Gosier (97190):0">Le Gosier (97190)</option>
+				<option value="Le Moule (97160):0">Le Moule (97160)</option>
+				<option value="Les Abymes (97139):0">Les Abymes (97139)</option>
+				<option value="Morne-à-l'Eau (97111):0">Morne-à-l'Eau (97111)</option>
+				<option value="Petit-Bourg (97170):0">Petit-Bourg (97170)</option>
+				<option value="Petit-Canal (97131):0">Petit-Canal (97131)</option>
+				<option value="Pointe-à-Pitre (97110):0">Pointe-à-Pitre (97110)</option>
+				<option value="Pointe-Noire (97116):0">Pointe-Noire (97116)</option>
+				<option value="Port-Louis (97117):0">Port-Louis (97117)</option>
+				<option value="Saint-Claude (97120):0">Saint-Claude (97120)</option>
+				<option value="Saint-François (97118):0">Saint-François (97118)</option>
+				<option value="Saint-Louis (97134):0">Saint-Louis (97134)</option>
+				<option value="Sainte-Anne (97180):0">Sainte-Anne (97180)</option>
+				<option value="Sainte-Rose (97115):0">Sainte-Rose (97115)</option>
+				<option value="Terre-de-Bas (97136):0">Terre-de-Bas (97136)</option>
+				<option value="Terre-de-Haut (97137):0">Terre-de-Haut (97137)</option>
+				<option value="Trois-Rivières (97114):0">Trois-Rivières (97114)</option>
+				<option value="Vieux-Fort (97141):0">Vieux-Fort (97141)</option>
+				<option value="Vieux-Habitants (97119):0">Vieux-Habitants (97119)</option>
+			</select>
+		</div>
+
+
+
+
+		<div class="containerINPUT">
+
+
+			<select onchange="updateCity(this)">
+				<option value=" :0"> Sélectionnez une ville ( OBLIGATOIRE ) </option>
+				<option value="Anse-Bertrand (97121):0">Anse-Bertrand (97121)</option>
+				<option value="Baie-Mahault (97122):40">Baie-Mahault (97122)</option>
+				<option value="Baillif (97123):0">Baillif (97123)</option>
+				<option value="Basse-Terre (97100):0">Basse-Terre (97100)</option>
+				<option value="Bouillante (97125):0">Bouillante (97125)</option>
+				<option value="Capesterre-Belle-Eau (97130):0">Capesterre-Belle-Eau (97130)</option>
+				<option value="Capesterre-de-Marie-Galante (97140):0">Capesterre-de-Marie-Galante (97140)
+				</option>
+				<option value="Deshaies (97126):0">Deshaies (97126)</option>
+				<option value="Gourbeyre (97113):0">Gourbeyre (97113)</option>
+				<option value="Goyave (97128):0">Goyave (97128)</option>
+				<option value="Grand-Bourg (97112):0">Grand-Bourg (97112)</option>
+				<option value="La Désirade (97127):0">La Désirade (97127)</option>
+				<option value="Lamentin (97129):0">Lamentin (97129)</option>
+				<option value="Le Gosier (97190):0">Le Gosier (97190)</option>
+				<option value="Le Moule (97160):0">Le Moule (97160)</option>
+				<option value="Les Abymes (97139):0">Les Abymes (97139)</option>
+				<option value="Morne-à-l'Eau (97111):0">Morne-à-l'Eau (97111)</option>
+				<option value="Petit-Bourg (97170):0">Petit-Bourg (97170)</option>
+				<option value="Petit-Canal (97131):0">Petit-Canal (97131)</option>
+				<option value="Pointe-à-Pitre (97110):0">Pointe-à-Pitre (97110)</option>
+				<option value="Pointe-Noire (97116):0">Pointe-Noire (97116)</option>
+				<option value="Port-Louis (97117):0">Port-Louis (97117)</option>
+				<option value="Saint-Claude (97120):0">Saint-Claude (97120)</option>
+				<option value="Saint-François (97118):0">Saint-François (97118)</option>
+				<option value="Saint-Louis (97134):0">Saint-Louis (97134)</option>
+				<option value="Sainte-Anne (97180):0">Sainte-Anne (97180)</option>
+				<option value="Sainte-Rose (97115):0">Sainte-Rose (97115)</option>
+				<option value="Terre-de-Bas (97136):0">Terre-de-Bas (97136)</option>
+				<option value="Terre-de-Haut (97137):0">Terre-de-Haut (97137)</option>
+				<option value="Trois-Rivières (97114):0">Trois-Rivières (97114)</option>
+				<option value="Vieux-Fort (97141):0">Vieux-Fort (97141)</option>
+				<option value="Vieux-Habitants (97119):0">Vieux-Habitants (97119)</option>
+			</select>
+		</div>
+
+
+		<p class="messageERROR">Un ou plusieurs champs n’ont pas été rempli correctement</p>
+		<button class="next" onclick="next(3)">SUIVANT<i class="fa fa-arrow-right"></i></button>
+
+	</div>
+
+
+	<div class="conteneur" id="partie4">
+		<button class="prev" onclick="previous(4)"> <i class="fa fa-arrow-left"> </i>Revenir à l'étape
+			Précedente</button>
+		<img src="photo/building.png" class="logo">
+		<h1>
+			Renseignez les coordonnées de votre entreprise
+		</h1>
+
+		<div class="containerINPUT">
+
+			<input type="text" id="nomEntreprise" placeholder="Nom de l'entreprise" >
+		</div>
+		<div class="containerINPUT">
+
+
+			<input type="text" id="numEntreprise" placeholder="Numéro de téléphone">
+		</div>
+		<div class="containerINPUT">
+
+			<input type="text" id="WebEntreprise" placeholder="Adresse du Site Web">
+
+		</div>
+
+
+		<div class="containerINPUT">
+
+
+			<select onchange="updateType(this)" id="TypeEntreprise">
+				<option value=":0">Sélectionnez un type d'activité </option>
+				<option value="Tourisme:100">Tourisme</option>
+				<option value="Droit:100">Droit</option>
+				<option value="Services à domicile:50">Services à domicile</option>
+				<option value="Les services aux entreprises:50">Les services aux entreprises</option>
+				<option value="Plomberie:100">Plomberie</option>
+				<option value="Technologique:50">Technologique</option>
+				<option value=" Finances &amp; assurances:200"> Finances &amp; assurances</option>
+				<option value="Vêtements et mode:100">Vêtements et mode</option>
+				<option value="Monétique TPE:50">Monétique TPE...</option>
+				<option value="Autres:0">Autres</option>
+			</select>
+
+
+		</div>
+
+
+		<p class="messageERROR">Un ou plusieurs champs n’ont pas été rempli correctement</p>
+		<button class="next" onclick="next(4)">SUIVANT <i class="fa fa-arrow-right"></i> </button>
+
+
+
+	</div>
+	</div>
+
+
+
+	<div class="conteneur" id="partie5">
+		<button class="prev" onclick="previous(5)"> <i class="fa fa-arrow-left"></i>Revenir à l'étape
+			Précedente</button>
+		<img src="photo/google.png" class="logo">
+		<h1>
+			Fiche Google My Business
+		</h1>
+		<a>Cette entreprise à référencer possède-t-elle une fiche Google My Business ?</a>
+
+		<button class="btnFGB" onclick="GMB('true')">OUI<i class="glyphicon glyphicon-ok"></i> </button>
+		<button class="btnFGB" onclick="GMB('false')">NON<i class="glyphicon glyphicon-remove"></i> </button>
+
+
+
+
+
+
+		<div id="checkboxTrue">
+
+			<img src="photo/Mybussiness.jpg" style="max-width:350px;max-height:600px;">
+
+		</div>
+
+
+		<div id="checkboxFalse" style="display: none;">
+			<div class="containerINPUT">
+
+
+				<label>Adresse</label>
+				<input type="text" placeholder="Adresse">
+
+
+				<label>Code postal</label>
+				<input type="text" placeholder="Code postal">
+
+
+
+				<label>Ville</label>
+				<input type="text" placeholder="Ville">
+
+
+
+				<a>Renseignez les heures d'ouverture : </a>
+
+				<div class="containerDate2">
+
+					<label>Ouverture</label>
+
+					<input type="time">
+
+				</div>
+				<div class="containerDate2">
+
+					<label>Fermeture</label>
+
+					<input type="time">
+
+				</div>
+
+
+
+			</div>
+		</div>
+
+		<button class="next" onclick="next(5)">SUIVANT <i class="fa fa-arrow-right"></i></button>
+
+	</div>
+
+	<div class="conteneur" id="partie6">
+		<button class="prev" onclick="previous(6)"> <i class="fa fa-arrow-left"></i> Revenir à l'étape
+			Précedente</button>
+		<img src="photo/coin.png" class="logo">
+		<h1>
+			Informations facturation
+		</h1>
+		<a>Le tarif est de :</a>
+
+		<a id="PrixTotal"></a>
+
+		<div class="containerINPUT">
+
+
+
+			<input type="text" oninput="updateFacMail(this)" placeholder="Entrez votre adresse email ici">
+			<label class="lblFacture">Préalable pour recevoir votre facture.</label>
+
+
+
+			<input type="text" oninput="updateFacEntreprise(this)" placeholder="Le nom de votre entreprise">
+			<label class="lblFacture">Préalable pour recevoir votre facture.</label>
+
+
+
+
+
+			<input type="text" oninput="updateFacPrenom(this)" placeholder="Votre prénom">
+			<label class="lblFacture">Préalable pour recevoir votre facture.</label>
+
+
+
+
+			<input type="text" oninput="updateFacNom(this)" placeholder="Votre nom">
+			<label class="lblFacture">Préalable pour recevoir votre facture.</label>
+
+
+
+
+			<input type="text" oninput="updateFacNum(this)" placeholder="Votre numéro de téléphone">
+			<label class="lblFacture">Préalable pour recevoir votre facture.</label>
+
+
+
+
+			<h1>Résumé</h1>
+			<div class="conteneurDateResume">
+
+				<label>Date de début : </label>
+				<input type="text" id="resumeDateDeb" readonly class="ResumeDate">
+
+
+			</div>
+
+			<div class="conteneurDateResume">
+				<label>Date de fin : </label>
+				<input type="text" id="resumeDateFin" readonly class="ResumeDate">
+
+
+			</div>
+
+
+
+
+
+			<table id="resumé">
+				<tr>
+					<th>Description</th>
+					<th>Informations</th>
+
+				</tr>
+
+
+				<tr>
+					<th colspan="2">Ville du référencement</th>
+				</tr>
+				<tr>
+					<td>Ville ( OBLIGATOIRE )</td>
+					<td id="ville1"></td>
+				</tr>
+				<tr>
+					<td>Seconde ville ( OPTIONNELLE )</td>
+					<td id="ville2"></td>
+				</tr>
+
+				<tr>
+					<td>Troisième ville ( OPTIONNELLE )</td>
+					<td id="ville3"></td>
+				</tr>
+
+
+
+
+				<tr>
+					<th colspan="2">Entreprise à référencer</th>
+				</tr>
+				<tr>
+					<td>Le nom de l'entreprise</td>
+					<td id="ResumeNomEntreprise"></td>
+				</tr>
+				<tr>
+					<td>Numéro de téléphone</td>
+					<td id="ResumeNumEntreprise"></td>
+				</tr>
+
+				<tr>
+					<td>Adresse du site web</td>
+					<td id="ResumeWebEntreprise"></td>
+				</tr>
+
+
+				<tr>
+					<td>Type d'activité de votre entreprise</td>
+					<td id="ResumeActiviteEntreprise"></td>
+				</tr>
+			</table>
+
+
+			<table>
+
+				<tr class="FicheGoogleMyBusiness">
+					<th colspan='2'>Fiche Google My bussiness</th>
+				</tr>
+
+				<tr class="FicheGoogleMyBusiness">
+					<td>Adresse</td>
+					<td id="adresse"></td>
+				</tr>
+
+				<tr class="FicheGoogleMyBusiness">
+					<td> Code postal</td>
+					<td id="CP"></td>
+				</tr>
+
+				<tr class="FicheGoogleMyBusiness">
+					<td>Ville</td>
+					<td id="ville"></td>
+				</tr>
+
+
+				<tr class="FicheGoogleMyBusiness">
+					<th colspan='2'>Horaire</th>
+				</tr>
+
+				<tr class="FicheGoogleMyBusiness">
+					<td>Ouverture </td>
+					<td id="Ouverture"></td>
+				</tr>
+
+				<tr class="FicheGoogleMyBusiness">
+					<td>Fermeture</td>
+					<td id="Fermeture"></td>
+				</tr>
+
+
+
+
+
+
+
+
+
+
+
+			</table>
+		</div>
+
+		<button class="Paiement"> <i class="fa fa-credit-card"></i>Réglez pour lancer la campagne</button>
+
+
+
+
+	</div>
+	<progress id="barProgress" max="5" value="0"></progress>
+
+</body>
+<a id="top" style="display: none;"></a>
+</html>
+<script
+	src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCRm64MHaZ9LJDsug5G9dW5FbsVAWiMOLY"></script>
+
+<script src="Chalandiz.js"></script>

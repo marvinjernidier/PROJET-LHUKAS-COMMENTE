@@ -1,0 +1,109 @@
+html {
+    font-family: "Lato", sans-serif;
+  }
+
+.teteImg{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+ #resumé {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 99%;
+    margin: auto;
+  }
+  
+  #resumé td,
+  #resumé th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #resumé tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #resumé tr:hover {
+    background-color: #ddd;
+  }
+  
+  #resumé th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    text-align: center;
+  }
+  .tete{
+      background-color: blanchedalmond;
+      color: black;
+  }
+  h1{
+      /* haut | droit | bas | gauche */
+      margin: 20px auto auto auto;
+      text-align: center;
+      font-size: 20px;
+  }
+
+
+  .prix{
+    margin: auto auto 10px auto;
+    text-align: center;
+    font-size: 20px;
+    color: #ff0000a1;
+  }
+  .Info{
+    font-size: 15px;
+     display:flex;
+     /* haut | droit | bas | gauche */
+    /* margin: 30px 70% auto auto;*/
+    position: absolute;
+    right: 100px;
+    top: 100px;
+  }
+  .logoHaut{
+    height: 200px;
+    width: 200px;
+   position: absolute;
+   display: flex;
+    left: 10px;
+    top: 0px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+  }
+  #nomP{
+    font-weight: 500;
+  }
+  
+  .tableTete{
+    width: 50%;
+    border-spacing:0;
+   /* haut | droit | bas | gauche */
+    margin: auto auto 50px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  
+  }
+.tableTete th{
+  border-bottom : 1px solid black;
+  text-align : left;
+   }
+  tr:nth-child(even) {
+    background-color: white;
+  }
+  .aPayer td{
+    color: white;
+  background-color: rgb(0, 123, 255);
+  }
+  .montant{
+    border-spacing:0;
+     /* haut | droit | bas | gauche */
+     margin: 20px auto auto 50%;
+     font-size: 20px;
+     color: white;
+  }
+  td, th{
+    padding: 8px;
+  }
