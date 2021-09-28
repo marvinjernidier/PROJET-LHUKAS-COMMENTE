@@ -1,0 +1,49 @@
+
+.separation{
+ 
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .detailsOffers th{
+      background-color:#F39200;
+  }
+      .detailsOffers {
+          width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        font-family: "Poppins", Sans-serif;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        
+      }
+      
+      .detailsOffers td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+.teteImg{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.tete{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+td,th{
+    text-align: center;
+   
+}
+.croix{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+

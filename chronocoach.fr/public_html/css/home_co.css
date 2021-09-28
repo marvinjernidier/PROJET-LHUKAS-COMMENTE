@@ -1,0 +1,663 @@
+body {
+  background: white;
+  margin: 0;
+  font-family: "Poppins", Sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid #16375e;
+}
+
+.topnav2{
+  display: none;
+  padding-bottom: 10px;
+  background-color: white;
+  border-bottom: 1px solid #16375e;
+}
+
+.direction {
+  text-transform: uppercase;
+  float: left;
+  margin-top: 0.9em;
+  font-weight: 600;
+  color: #16375e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+.logo{
+  width: 140px;
+  float: left;
+  height:auto;
+  margin-top: 0.9em ;
+  margin-left: 20%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+
+#connexion {
+  float: left;
+  margin-left: 5%;
+  margin-top: 5px;
+ 
+
+}
+
+#btnCO{
+  width: 50%;
+  height: 20%;
+  margin-bottom: 15px;
+  background-color: #16375e;
+  margin: auto;
+}
+
+
+.popup .form .avatar {
+margin:30px 0px 20px;
+text-align:center;
+}
+.popup .form .avatar img {
+width:120px;
+border-radius:50%;
+}
+.message {
+margin: 15px 0 0;
+color: #b3b3b3;
+font-size: 12px;
+margin-bottom: 15px;
+}
+input {
+
+outline: 0;
+background: #f2f2f2;
+width: 80%;
+display: block;
+margin: auto;
+border: 0;
+margin-bottom: 15px;
+padding: 15px;
+box-sizing: border-box;
+font-size: 14px;
+border-radius: 5px;
+}
+
+
+#message{
+display: block;
+color: red; 
+}
+
+
+#reponse{
+  display: block;
+  color: red;
+}
+
+#membre {
+  float: left;
+  margin-left: 5%;
+  margin-top: 5px;
+  margin-top: 1.5em;
+ 
+
+}
+
+#deco{
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-top: 1.5em;
+}
+
+
+.aWhite{
+background-color: white;
+color: #F39200;
+border : 1px solid #F39200;
+padding: 10px;
+font-size: 15px;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.aOrange{
+
+background-color: #F39200;
+color: white;
+border : 1px solid #F39200;
+padding: 10px;  
+font-size: 15px;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+
+.containerWHITE{
+width: 100%;
+height: 450px;
+}
+.introduction{
+width: 40%;
+height: 80%;
+margin-top: 10px;
+display: inline-block;
+margin-left: 15%;
+}
+
+.introduction h1{
+  font-weight: 400;
+font-size: 39px;
+color: #F39200;
+font-family: "Suez One";
+
+}
+.introduction p{
+font-size: 24px;
+line-height: 1.2em;
+width: 300px;
+}
+
+
+
+#photoContainerWhite{ 
+height: 240px;
+max-width: 100%;
+margin-top: 20px;
+
+border: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.block2{
+display: inline;
+margin-left: 5px;
+}
+
+
+
+
+
+
+
+.containerORANGE{
+padding-top: 30px;
+padding-bottom: 30px;
+width: 100%;
+height: 700px;
+background-color: #16375e; 
+display: block;
+
+}
+
+.Introduction2{
+padding-top: 50px;
+padding-left: 20px;
+background-image: url(../photo/container1.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+
+text-align: left;
+margin: auto;
+width: 60%;
+height: 600px;
+background-color: #16375e;
+border-radius: 10px;
+}
+.Introduction2 h1{
+font-size: 39px;
+font-family: "Suez One", Sans-serif;
+font-weight: 400;
+letter-spacing: 1.6px;
+color: #F39200;
+margin-top: 30%;
+}
+.Introduction2 p{
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2em;
+ color: rgb(255, 255, 255);
+  text-align: left;
+  margin: 0px 0px 16px;
+  width: 50%;
+}
+
+
+.containerWHITE2{
+margin-top: 30px;
+width: 100%;
+height: 650px;
+
+
+
+
+
+}
+
+.Introduction3{
+padding-top: 50px;
+padding-left: 20px;
+background-image: url("../photo/container2.png");
+background-position: center center;
+  background-size: cover; 
+margin: auto;
+width: 60%;
+height: 600px;
+background-color: #16375e;
+border-radius: 10px;
+}
+.Introduction3 h1{
+font-size: 39px;
+font-family: "Suez One", Sans-serif;
+font-weight: 400;
+letter-spacing: 1.6px;
+margin-left: 55%;
+color: #F39200;
+}
+.Introduction3 p{
+
+
+
+text-align: right;
+  font-size: 20px;
+ 
+  font-weight: 400;
+  line-height: 1.2em;
+  color: rgb(255, 255, 255);
+  
+  margin-left: 50%;
+  width: 40%;
+}
+
+
+
+.containerBLUE{
+
+background-color: #16375e;
+}
+
+
+
+.footer {
+border-top: 1px solid #16375e;
+margin-top: 40px;
+
+width: 100%;
+background-color: white;
+color: black;
+}
+.entreprise{
+  color: black;
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.entreprise p{
+ font-size: 15px;
+ font-weight: 400;
+ line-height: 1.2em;
+ 
+}
+
+.contact p{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2em;
+  
+ }
+
+.logoFooter{
+width: 80px;
+float: left;
+height:100%;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 10px;
+}
+.logoSocial{
+
+width: 40px;
+height: 40px;
+margin-right: 15px;
+}
+
+.contact{
+margin-left: 0px;
+float: right;
+height: 100%;
+width: 30%;
+}
+
+.contact a{
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*////////////////////////////////////*/
+
+@media all and (max-device-width: 768px) {
+
+  .dropbtn {
+ 
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+     
+  }
+  
+  .dropdown {
+    background-color: white;
+    position: relative;
+    display: inline-block;
+  }
+
+
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    
+    width: 350px;
+ 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  .dropdown:hover .dropdown-content{
+      display: block;
+    }
+    .logo{
+  
+      margin-right: 30%;
+    }
+  
+    .dropdown-content a {
+      float: none;
+  text-transform: uppercase;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      height: 30%;
+      text-align: center;    
+    font-weight: 600;
+    color: #16375e;
+    font-size: 30px;
+    border-bottom: 1px solid #16375e;
+    }
+    .menu{
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+    }
+  .topnav{
+    display: none;
+  }
+  .topnav2{
+    height: 70px;
+    display: block;
+  }
+  #deco{
+    color: red;
+  }
+
+}
+
+
+
+
+@media all and (max-device-width: 425px) {
+  #deco{
+    color: red;
+  }
+
+  #membre{
+    margin: 0px;
+    float: none;
+    margin-left:none;
+  }
+  #deco{
+    margin: 0px;
+    float: none;
+    margin-left:none;
+
+  }
+.dropbtn {
+
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+   
+}
+
+.dropdown {
+  background-color: white;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  
+   
+  right: 10px;
+  width: 600px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+  }
+  .logo{
+
+    margin-right: 30%;
+  }
+
+  .dropdown-content a {
+    float: none;
+text-transform: uppercase;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    height: 100px;
+    text-align: center;    
+  font-weight: 600;
+  color: #16375e;
+  font-size: 30px;
+  }
+  .menu{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  #deco{
+    color: red;
+  }
+.topnav{
+  display: none;
+}
+.topnav2{
+  height: 70px;
+  display: block;
+}
+.popup{
+  
+  width: 800px;
+  height: 800px;
+
+}
+
+input[type=text], input[type=password]  {
+
+  height: 100px;
+  font-size: 30px;
+}
+input[type=checkbox]{
+
+
+  width: 60px;
+  height: 60px;
+
+}
+.direction{
+
+border-bottom: 1px solid #16375e;
+}
+.introduction{
+  margin-left: 5%;
+}
+.introduction h1 {
+  font-size: 45px;
+  margin-bottom: 5px;
+  width: 500px;
+}
+.block2 {
+  margin-left: 30px;
+}
+.introduction p {
+  margin-top: 5px;
+  font-size: 37px;
+  width: 500px;
+}
+#photoContainerWhite{
+
+  margin-bottom: 90px;
+  width: 400px;
+  height: 300px;
+  margin-left: 80px;
+  
+
+}
+.containerWHITE{
+  height: 550px;
+}
+.aWhite{
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+
+}
+.aOrange{
+  display: block;
+  text-align: center;
+  font-size: 25px;
+ 
+}
+.containerORANGE, .containerWHITE2{
+
+  height: 800px;
+}
+.Introduction2{
+  width: 90%;
+  height: 700px;
+  padding-left: 0px;
+}
+.Introduction2 h1 {
+  font-size: 70px;
+  margin-top: 0%;
+  text-align: center;
+}
+.Introduction2 p {
+  font-size: 45px;
+  width: 80%;
+  margin: auto;
+}
+
+.Introduction3{
+  width: 90%;
+  height: 700px;
+  padding-left: 0px;
+}
+
+.Introduction3 h1 {
+  font-size: 70px;
+  margin-top: 0%;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.Introduction3 p {
+
+  font-size: 45px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+.logoFooter {
+width: 100px;
+}
+.logoSocial {
+width: 50px;
+height: 50px;
+}
+.entreprise p{
+  font-size: 20px;
+  line-height: 1em;
+  width: 550px;
+}
+.contact{
+  width: 40%;
+}
+.contact p{
+  font-size: 20px;
+}
+
+
+}
+
+
+
+
+
+
+
+

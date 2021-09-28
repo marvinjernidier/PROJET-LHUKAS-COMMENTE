@@ -1,0 +1,346 @@
+body {
+  background: #fbfbfb;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid #16375e;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #16375e;
+  color: white;
+}
+#membre {
+  float: left;
+  margin-left: 5%;
+  margin-top: 5px;
+ 
+
+}
+
+#deco{
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.aWhite{
+background-color: white;
+  color: #F39200;
+  border : 1px solid #F39200;
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: none;
+border-radius: 5px;
+}
+
+.aOrange{
+
+  background-color: #F39200;
+  color: white;
+  border : 1px solid #F39200;
+  padding: 10px;  
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.topnav2{
+  display: none;
+  padding-bottom: 10px;
+  background-color: white;
+  border-bottom: 1px solid #16375e;
+}
+.direction {
+  text-transform: uppercase;
+  float: left;
+  margin-top: 0.9em;
+  font-weight: 500;
+  color: #16375e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.logo{
+  width: 140px;
+  float: left;
+  height:auto;
+  margin-top: 0.9em ;
+  margin-left: 20%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+.container {
+  background: #FFFFFF;
+  width: 600px;
+  margin: auto;
+  padding: 45px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  box-shadow: 1px 1px 12px #555;
+}
+
+.title{
+ 
+  font-size: 39px;
+  text-align: center;
+  color: #16375e;
+  font-family: "Suez One";
+  font-weight: 400;
+    }
+  .title2{
+      font-size: 20px;
+      text-align: center;
+      color: black;
+      font-family: "Suez One";
+      font-weight: 500;
+        }
+    
+
+.imgValidation
+{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+input,select {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.matin, .apresmidi{
+  display: inline-block;
+}
+.btn {
+  text-transform: uppercase;
+  outline: 0;
+  background: #16375e;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.detailsOffers th{
+background-color:#16375e;
+}
+.detailsOffers {
+  margin: auto;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  
+}
+
+.detailsOffers td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.details{
+  border: 2px solid #F39200;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+.separation{
+
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+#placeNiche{
+  margin-top: 20px;
+}
+.footer {
+  border-top: 1px solid #16375e;
+  margin-top: 40px;
+  height: 120px;
+  width: 100%;
+  
+  background-color: white;
+  color: black;
+    bottom: 0px;
+}
+.entreprise{
+  color: black;
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.entreprise, .contact p{
+ font-size: 15px;
+ font-weight: 500;
+ line-height: 1.2em;
+ 
+}
+
+.logoFooter{
+  width: 80px;
+  float: left;
+  height:100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+.logoSocial{
+
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.contact{
+  margin-left: 0px;
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+
+.contact a{
+  cursor: pointer;
+}
+
+
+
+
+@media all and (max-device-width: 425px) {
+
+.logoFooter {
+width: 130px;
+height: 80%;
+}
+.logoSocial {
+width: 50px;
+height: 50px;
+}
+
+.test{
+  display: block;
+}
+.left{
+
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+ 
+  margin: auto;
+}
+.left p{
+
+    font-size: 30px;
+}
+.left span{
+  font-size: 40px;
+  
+  font-weight: 500;
+}
+.slideshow-container {
+  margin-top: 60px;
+  width: 100%;
+}
+.container{
+  width: 80%;
+}
+.prev, .next{
+  font-size: 50px;
+}
+.next{
+  right: 5%;
+}
+.prev{
+  left: 5%;
+}
+.detailsOffers {
+  
+  font-size: 27px;
+}
+
+.container h3, .container h4 {
+  
+  font-size: 25px;
+}
+.btn{
+  font-size: 28px;
+}
+
+
+input[type=date],input[type=number],input[type=text],select{
+  height: 100px;
+  font-size: 35px;
+}
+input[type=radio]{
+  width: 60px;
+  height: 60px;
+}
+label{
+  display: block;
+  font-size: 40px;
+}
+.matin{
+  margin-right: 40px;
+}
+.entreprise p{
+  font-size: 20px;
+  line-height: 1em;
+  width: 550px;
+}
+.contact{
+  width: 40%;
+}
+.contact p{
+  font-size: 20px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<title>Inscription</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/inscription.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Suez+One&display=swap" rel="stylesheet">
+<html>
+<main>
+  <div class="topnav">
+    <a href="../index.php" ><img class="logo"  src="../photo/logo1.png"></a>
+
+   
+
+    <a href="../index.php#organisme" class="direction">Organisateur de formations</a>
+    <a  href="../index.php#formateurs" class="direction">FORMATEURS</a>
+
+   <a id="connexion" class="aWhite" onclick="openLoginForm()">SE CONNECTER</a>
+   <div id="formTrainers">
+
+
+<div class="popup-overlay"></div>
+<div class="popup">
+  <div class="popup-close" onclick="closeLoginForm()">×</div>
+  <div class="">
+    <div class="avatar">
+      <img src="../photo/avatar.png" alt="">
+    </div>
+    <div class="header">
+      Connexion formateur
+    </div>
+    <form >
+      <input type="text" placeholder="Adresse-mail" id="mail" />
+      <input type="password" placeholder="mot de passe" name="Password" id="password"/>
+ 
+      <a>Voir mot de passe.</a>
+      <input type="checkbox" onclick="showMDP()">
+      
+       <a id="reponse" class="reponse"></a>
+    </form>
+    <button class="aOrange" onclick="connexion()" id="btnCO">Comfirmer</button>
+   <p class="message">Pas de compte? <a href="inscription.html">Créer un compte!</a></p>
+      <p class="message">Vous etes responsable pédagogique ? <a href="connexionEDUC.html">Connectez-vous ici !</a></p>
+  </div>
+</div>
+   </div>
+   
+    <a  id="inscription" href="inscription.html" class="aOrange" >S'INSCRIRE</a>
+  </div>
+
+
+
+
+  <div class="topnav2">
+    <a href="../index.php" ><img class="logo"  src="../photo/logo1.png"></a>
+    <div class="dropdown">
+      <img class="menu"  src="../photo/menu.png">
+
+      <div class="dropdown-content">
+      
+    <a href="../index.php#organisme" class="direction">Organisateur de formations</a>
+    <a  href="../index.php#formateurs" class="direction">FORMATEURS</a>
+
+    
+        <a id="" class="" onclick="openLoginForm()">SE CONNECTER</a>
+      </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+<div class="popup">
+  <div class="popup-close" onclick="closeLoginForm()">×</div>
+  <div class="form2">
+    <div class="avatar">
+      <img src="../photo/avatar.png" alt="">
+    </div>
+    <div class="header">
+      Connexion formateur
+    </div>
+    <form >
+      <input type="text" placeholder="Adresse-mail" id="mail3" />
+      <input type="password" placeholder="mot de passe" name="Password" id="password3"/>
+      
+      <a>Voir mot de passe.</a>
+      <input type="checkbox" onclick="showMDP3()">
+      
+       <a id="reponse2" class="reponse"></a>
+    </form>
+    
+    <button class="aOrange" onclick="connexion2()" id="btnCO">Comfirmer</button>
+    <p class="message">Pas de compte? <a href="inscription.html">Creer un compte!</a></p>
+      <p class="message">Vous etes responsable pédagogique ? <a href="connexionEDUC.html">Connectez-vous ici !</a></p>
+   
+  </div>
+</div>
+  </div>
+
+<div class="register-page">
+   
+    <div class="form" >
+         <h1 id="titre">Inscription formateur</h1>
+      <form autocomplete="xyz123" class="" action="../modeles/inscription.php" method="post" id="formInscription" >
+       
+        <input type="text" placeholder="Prénom" id="FirstName" name="FirstName"  />
+        <input type="text" placeholder="Nom" id="Surname"  name="Surname"/>
+        <input type="text" placeholder="Mail" id="Mail" name="Mail" />
+        <select name="prefix" id="prefix">
+          <option value="+590">(+590) GP</option>
+          <option value="+33">(+596) MQ</option>
+          <option value="+33">(+33) FR</option>
+         
+      </select>
+        <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type = "number" maxlength = "10" placeholder="téléphone" id="Phone" name="Phone"/>
+        <input autocomplete="off" type="text" placeholder="Ville" name="City" id="City" />
+        <input type="text" placeholder="Code parrainage" name="sponsorshipCode"/>
+        <input type="hidden" id="nameCV" name="nameCV"/>
+        <a>Déposer votre CV.</a>
+        <input type="file" id="file" name="file" accept=".pdf,.docx">
+          <input type="password" placeholder="mot de passe" id="password1"/>
+          <input type="password" placeholder="Comfirmer mot de passe" id="password2" name="Password"/>
+          <a>Voir mot de passe.</a>
+          <input type="checkbox" onclick="showMDP2()">
+          <div class="separation"></div>
+          <h3>Sujet principale</h3>
+             <input type="hidden" id="nbSubject" name="nbSubject" value="1"/>
+
+             <select name="Subject1" id="Subject1">
+              <option value="">--Choissisez un sujet--</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Office-automation">Office-automation</option>
+              <option value="Accounting">Accounting</option>
+              <option value="English">English</option>
+              <option value="French-and-general-culture">French-and-general-culture</option>
+              <option value="Web-development">Web-development</option>
+              <option value="Mobile-development">Mobile-development</option>
+          </select>
+          <input type="number" placeholder="nombre d'années d'expérience" id="yearsSubject1" name="yearsSubject1"/>
+
+<div id="Subject2">
+<h3>Subject 2</h3>
+<select name="Subject2">
+  
+  <option value="">--Choissisez un sujet--</option>
+  <option value="Marketing">Marketing</option>
+  <option value="Office-automation">Office-automation</option>
+  <option value="Accounting">Accounting</option>
+  <option value="English">English</option>
+  <option value="French-and-general-culture">French-and-general-culture</option>
+  <option value="Web-development">Web-development</option>
+  <option value="Mobile-development">Mobile-development</option>
+        </select>
+        <input type="number" placeholder=" nombre d'années d'expérience" id="yearsSubject2" name="yearsSubject2"/>
+
+
+</div>
+          
+<div id="Subject3">
+  <h3>Subject 3</h3>
+<select name="Subject3">
+ <option value="">--Choissisez un sujet--</option>
+  <option value="Marketing">Marketing</option>
+  <option value="Office-automation">Office-automation</option>
+  <option value="Accounting">Accounting</option>
+  <option value="English">English</option>
+  <option value="French-and-general-culture">French-and-general-culture</option>
+  <option value="Web-development">Web-development</option>
+  <option value="Mobile-development">Mobile-development</option>
+      </select>
+      <input type="number" placeholder="nombre d'années d'expérience" id="yearsSubject3" name="yearsSubject3"/>
+
+
+</div> 
+        <button id="submit" class="btn aOrange"  >Comfirm registration</button>
+        
+      </form>
+      <button id="AddSubject" class="addSubject aOrange" onclick="addSubject()">Ajouter un sujet</button>
+      <button id="RemoveSubject" class="removeSubject aWhite" onclick="removeSubject()">Supprimer un sujet</button>
+      <button id="verification" class="btn aOrange" onclick="verification()">Verification</button>
+      <a id="messageCHECK"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</main>
+
+<div class="footer">
+ 
+
+    <div class="entreprise">
+      <img class="logoFooter"  src="../photo/logoMJmetrix.png">
+      <p>Site réalisé par MJ METRIX</p>
+      <p>Agence digitale en Guadeloupe & Martinique</p>
+    </div>
+    
+   
+    <div class="contact">
+      
+      <p>Rejoignez-nous sur les réseaux </p>
+      <a onclick= 'window.open ("https://www.facebook.com/realmjmetrix")' ><img class="logoSocial"  src="../photo/facebook.png"></a>
+      <a onclick= 'window.open ("https://www.google.com/maps/place/MJ+Metrix+-+Agence+digitale+en+Guadeloupe/@16.241951,-61.5702357,17z/data=!3m1!4b1!4m5!3m4!1s0x8c13453310392ccf:0xd1bf5097a38d7599!8m2!3d16.241951!4d-61.568047")' ><img class="logoSocial"  src="../photo/google.png"></a>
+    </div>
+  
+  
+  
+  
+  </div>
+
+
+
+  
+  
+  </html>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCRm64MHaZ9LJDsug5G9dW5FbsVAWiMOLY"></script>
+  <script>
+var options = {types: ['(cities)'],componentRestrictions: {country: "gp"}};
+
+var input = document.getElementById("City");
+var autocomplete = new google.maps.places.Autocomplete(input, options);
+
+/*
+
+Les 2 fonction suivante qui sont commence par connexion sont des requète ajax pour l'authentification de lu'utilisateur, 
+la raison pour laquel il y en as 3 est que il y a 2 formulaire de connexion sur cette page du coup pour etre plus adaptatif avec chaque input j'ai crée 3 requete de connexion
+C'est une requète AJAX normal sans particularité
+
+
+*/
+function connexion() {
+
+var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      if(this.responseText ==  "error"){
+        document.getElementById('reponse').innerHTML = "mot de passe ou adresse mail incorrect";
+        
+      }
+      else{
+        alert('connexion reussi');
+        window.location.href = "acceuil_connecte.html";
+      }
+     
+    }
+  };
+  xmlhttp.open("GET", "../modeles/connexion.php?mail="+document.getElementById('mail').value+"&mdp="+document.getElementById('password').value, true);
+  xmlhttp.send();
+
+}
+
+
+
+function connexion2() {
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    if(this.responseText ==  "error"){
+      document.getElementById('reponse2').innerHTML = "mot de passe ou adresse-mail incorrect";
+      
+    }
+    else{
+      alert('connexion reussi');
+      window.location.href = "acceuil_connecte.html";
+    }
+   
+  }
+};
+xmlhttp.open("GET", "../modeles/connexion.php?mail="+document.getElementById('mail3').value+"&mdp="+document.getElementById('password3').value, true);
+xmlhttp.send();
+
+}
+
+//les 3 fonction suivante servent a affiché le mot de passe en toute lettres, de passer le type de l'input de password a text  
+function showMDP() {
+
+var x = document.getElementById("password");
+if (x.type === "password") {
+  x.type = "text";
+} else {
+  x.type = "password";
+}
+
+
+
+}
+
+function showMDP2() {
+
+var x = document.getElementById("password1");
+if (x.type === "password") {
+  x.type = "text";
+} else {
+  x.type = "password";
+}
+
+var x = document.getElementById("password2");
+if (x.type === "password") {
+  x.type = "text";
+} else {
+  x.type = "password";
+}
+}
+
+function showMDP3() {
+
+var x = document.getElementById("password3");
+if (x.type === "password") {
+  x.type = "text";
+} else {
+  x.type = "password";
+}
+}
+//Cette fonction sers a faire apparaitre l'encadrée de connexion
+  function openLoginForm(){
+    document.body.classList.add("showLoginForm");
+  }
+
+//Cette fonction sers a faire disparaitre l'encadrée de connexion
+  function closeLoginForm(){
+    document.body.classList.remove("showLoginForm");
+  }
+//Initialisation des variables avec l'élément du dom et aussi leurs affichage
+ btnSubmit = document.getElementById('submit');
+ btnSubmit.style.display = "none";
+ btnVerification = document.getElementById('verification');
+ btnAddSubject = document.getElementById('AddSubject');
+ btnRemoveSubject = document.getElementById('RemoveSubject');
+ btnRemoveSubject.style.display = "none";
+ select2 = document.getElementById('Subject2');
+ select3 = document.getElementById('Subject3');
+
+
+
+ select2.style.display = "none";
+ select3.style.display = "none";
+/*
+
+cette fonction sers a ajoutez une manière enseignez par le formateurs qui est entrain de s'inscrire.
+Pour pouvoir ajoutez des matieres enseigner il faut que tous les champs de la matière precedentes sois renseigné avant, sinon un message d'erreur s'affichera indiquant a l'utilisateur
+qu'ils n'as pas remplie un champs obligatoire.
+le formateur peux ajoutez jusqu'a 3 matiere.
+Arriver a 3 le bouton permettant d'ajoutez des matiere des ce désactivera.
+Aussi a chaque fois que le formateur clique sur le bouton pour ajoutez des matieres la matière precedemment remplie ce mettera en read only c'est a dire qu'elle ne sera pas modifiable 
+
+
+*/
+ function addSubject(){
+      if(document.getElementById('nbSubject').value ==1){
+        if(document.getElementById('Subject1').selectedIndex == 0 | document.getElementById('yearsSubject1').value == "")
+        {
+          alert("Entrez le nombre d'années d'expérience, si vous n'avez pas d'années d'expérience, mettez zéro")
+        }
+        else{
+          select2.style.display = "block";
+        document.getElementById('nbSubject').value = 2;
+        btnRemoveSubject.style.display = "block";
+        document.getElementById("Subject1").readOnly = true;
+        document.getElementById("yearsSubject1").readOnly = true;
+
+        }
+        
+       
+      }
+      else if(document.getElementById('nbSubject').value ==2){
+        if(document.getElementsByName('Subject2').selectedIndex == 0 | document.getElementById('yearsSubject2').value == ""){
+          alert("entrez le nombre d'années d'expérience pour le sujet 2, si vous n'en avez pas, mettez zéro ou sélectionnez un sujet pour le sujet 2")
+        }
+        else {
+        select3.style.display = "block";
+        document.getElementById('nbSubject').value =3;
+        btnAddSubject.style.display = "none";
+        document.getElementsByName('Subject2')[0].readOnly = true;
+        document.getElementById('yearsSubject2').readOnly = true;
+        }
+        
+
+      }
+ }
+
+
+ /*
+Cette fonction sers a supprimé une matière
+
+ */
+ function removeSubject(){
+
+  if(document.getElementById('nbSubject').value ==3){
+        select3.style.display = "none";
+        document.getElementById('nbSubject').value = 2;
+        document.getElementById('yearsSubject2').readOnly = false;
+        
+        btnAddSubject.style.display = "block";
+       
+      }
+      else if(document.getElementById('nbSubject').value == 2){
+        select2.style.display = "none";
+        document.getElementById('nbSubject').value =1;
+        document.getElementById('yearsSubject1').readOnly = false;
+        btnRemoveSubject.style.display = "none";
+      }
+
+ }
+
+ /*
+Cette fonction sers a ajoutez un fichier plus précisement un CV dans notre situation a la base de données
+
+ */
+ function addFile(){
+  var files = document.getElementById("file").files;
+   var formData = new FormData();
+   formData.append("file", files[0]);
+
+   var xhttp = new XMLHttpRequest();
+
+
+   xhttp.open("POST", "ajaxfile.php", true);
+  
+   xhttp.send(formData);
+
+   var fullPath = document.getElementById('file').value;
+   if (fullPath) {
+    var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+    var filename = fullPath.substring(startIndex);
+    if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+        filename = filename.substring(1);
+    }
+    document.getElementById('nameCV').value=filename;
+  }
+
+
+ }
+
+
+ /*
+Cette fonction vérifie chaque champs du formulaire d'inscription
+
+exemple : si le champs pour le mail est bien comforme a un mail ou si les mots de passe sont similaire etc
+et si un champs n'est pas bon un méssage s'affichera et ce champs incorrect aura ces bordure renforcée et de couleur rouge 
+
+
+ */
+ function verification() {
+
+
+
+
+valider = true;
+  if (document.getElementById('FirstName').value == "") {
+            document.getElementById('FirstName').style.border = "1px solid red";
+            valider = false
+  }else {document.getElementById('FirstName').style.border = "none";}
+
+  
+  if (document.getElementById('City').value == "") {
+            document.getElementById('City').style.border = "1px solid red";
+            valider = false
+  }else {document.getElementById('City').style.border = "none"; }
+
+
+
+
+  if (document.getElementById('Surname').value == "") {
+        document.getElementById('Surname').style.border = "1px solid red";
+        valider = false
+          }else {document.getElementById('Surname').style.border = "none"; }
+        var reg = /^([a-zA-Z]|[0-9]|.?)*@[a-z]*.[a-z]{2,3}$/gm;
+
+
+        var testMail = reg.test(String(document.getElementById("Mail").value));
+         if (testMail == false) {
+         
+          document.getElementById("Mail").style.border = "1px solid red";
+          valider = false
+       }
+
+
+       phone = document.getElementById("Phone").value;
+     
+       if (phone.length<9) {
+        document.getElementById("Phone").style.border = "1px solid red";
+            valider = false
+            alert("numéro de téléphone invalide")
+        }else {document.getElementById('Phone').style.border = "none"; }
+
+
+       if (document.getElementById("password1").value == "")
+        {
+          document.getElementById("password1").style.border = "1px solid red";
+            valider = false
+        }else {document.getElementById('password1').style.border = "none"; }
+
+
+        if (document.getElementById("password1").value != document.getElementById("password2").value) {
+            alert("passwords are not similar")
+            document.getElementById("password1").style.border = "1px solid red";
+            document.getElementById("password2").style.border = "1px solid red";
+            valider = false
+        }
+        else {document.getElementById('password1').style.border = "none";
+              document.getElementById('password2').style.border = "none";
+      }
+
+        if(document.getElementById('Subject1').selectedIndex == 0){
+        
+          document.getElementById('Subject1').style.border = "1px solid red";
+          valider = false
+        }
+        if( document.getElementById('nbSubject').value== 3){
+          if(document.getElementsByName('Subject3').selectedIndex == 0 | document.getElementById('yearsSubject3').value == ""){
+          alert("entrez le nombre d'années d'expérience pour le sujet 3, si vous n'en avez pas, mettez zéro ou sélectionnez un sujet pour le sujet 3")
+          valider = false
+        }
+        }
+
+        if(document.getElementById('file').value == ""){
+          alert("vous devez obligatoirement fournir un CV")
+          document.getElementById('file').style.border = "1px solid red";
+          valider = false
+        }
+        else{
+ if( document.getElementById("file").files[0].size > (3*1024*1024)){
+          alert("Le fichier est trop volumineux")
+          document.getElementById('file').style.border = "1px solid red";
+          valider = false
+        }
+
+        }
+
+      
+
+
+    
+    //Requete ajax pour vérifié la disponibilité de l'adresse mail
+         
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    console.log(this.responseText)
+      if(this.responseText == 1){
+          alert("L'adresse mail est déja prise")
+          document.getElementById("Mail").style.border = "1px solid red"
+          valider = false
+          
+          
+      }
+      else if (valider == true){
+
+          addFile();
+         
+          btnVerification.style.display = "none";
+          btnAddSubject.style.display = "none";
+          btnRemoveSubject.style.display = "none";
+          btnSubmit.style.display = "block";
+          var x, i;
+        x = document.querySelectorAll("input");
+        for (i = 0; i < x.length; i++) {
+        x[i].readOnly = true;
+  }
+  document.getElementById("messageCHECK").innerHTML = "Toutes les informations sont correctes, vous pouvez confirmer votre inscription."
+        }
+else {
+          alert("Certains champs ne sont pas remplis ou ne sont pas comforme")
+        }
+      
+  }
+};
+xmlhttp.open("GET", "../modeles/testMail.php?mail="+document.getElementById('Mail').value, true);
+xmlhttp.send();
+         
+    
+        
+
+
+
+ }
+
+
+
+  </script>

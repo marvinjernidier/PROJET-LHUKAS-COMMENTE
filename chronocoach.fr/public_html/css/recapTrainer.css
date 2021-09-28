@@ -1,0 +1,179 @@
+body {
+    background: #fbfbfb;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 1px solid #16375e;
+  }
+  h1{
+
+    font-size: 30px;
+text-align: center;
+color: #000000;
+font-family: "Suez One";
+font-weight: 400;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #16375e;
+    color: white;
+  }
+  .logo{
+    width: 14%;
+    float: right;
+    height:40px;
+  }
+  .container {
+    background: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 5px;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  
+.detailsOffers th{
+    background-color:#16375e;
+    color: white ;
+    }
+    .detailsOffers {
+      margin: auto;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      table-layout: auto;
+        width: 70%;
+    }
+    .btn {
+      text-transform: uppercase;
+      outline: 0;
+      background: #16375e;
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+  }
+    .detailsOffers td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding-left: 8px;
+      max-width: 500px;
+      text-align: center;
+      
+    }
+    #totalHour{
+      margin: auto;
+      font-family: "Suez One";
+      font-size: 25px;
+    }
+    .separation{
+
+        width: 50%;
+        height: 2px;
+        background-color: black;
+        margin: auto;
+      }
+
+      .footer {
+        border-top: 1px solid #16375e;
+     
+        height: 120px;
+        width: 100%;
+       
+        background-color: white;
+        color: black;
+        bottom: 0px;
+      }
+      .entreprise{
+        color: black;
+        float: left;
+        height: 100%;
+        width: 30%;
+      }
+      .entreprise, .contact p{
+       font-size: 15px;
+       font-weight: 600;
+       font-family: 'Poppins', sans-serif;
+       line-height: 1.2em;
+       
+      }
+      
+      .logoFooter{
+        width: 80px;
+        float: left;
+        height:100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10px;
+      }
+      .logoSocial{
+      
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+      
+      .contact{
+        margin-left: 0px;
+        float: right;
+        height: 100%;
+        width: 30%;
+      }
+      
+      .contact a{
+        cursor: pointer;
+      }
+
+
+
+      @media all and (max-device-width: 425px) {
+
+        .topnav a.active {
+        
+          font-size: 40px;
+      }
+        .container{
+          width: 90%;
+        }
+        h1{
+
+          font-size: 39px;
+     
+        }
+        .detailsOffers {
+          width: 90%;
+          font-size: 30px;
+      }
+        .btn {
+          font-size: 28px;
+      }
+      #totalHour{
+        font-size: 25px;
+      }
+
+
+      }
+    
+      

@@ -1,0 +1,952 @@
+body {
+    margin: 0;
+    background: #fbfbfb;
+    font-family: 'Poppins', sans-serif;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 1px solid #16375e;
+  }
+  
+  .direction {
+    text-transform: uppercase;
+    float: left;
+    margin-top: 0.9em;
+    font-weight: 600;
+    color: #16375e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  
+  
+  .logo{
+    width: 140px;
+    float: left;
+    height:auto;
+    margin-top: 0.9em ;
+    margin-left: 20%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+  }
+  
+  
+  #membre {
+    float: left;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-top: 1.5em;
+   
+  
+  }
+  
+  #deco{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-top: 1.5em;
+  }
+  #btnValidation{
+
+    color:#16375e;
+    border : 1px solid #16375e;
+  }
+  
+  .aWhite{
+  background-color: white;
+    color: #16375e;
+    border : 1px solid #16375e;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+  border-radius: 5px;
+  }
+  
+  .aOrange{
+  
+    background-color: #16375e;
+    color: white;
+    border : 1px solid #16375e;
+    padding: 10px;  
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .container {
+    background: #FFFFFF;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 45px;
+    text-align: center;
+   
+    border-radius: 5px;
+  }
+  .container h1, .container h3{
+    color:#16375e;
+  }
+  #noOffers{
+    margin-top: 10%;
+  }
+  .containerNOVALIDATE{
+    margin-top: 10%;
+
+  }
+  .title{
+    font-weight: 500;
+font-size: 39px;
+text-align: center;
+color: #16375e;
+font-family: "Suez One";
+  }
+  .btn {
+    text-transform: uppercase;
+    outline: 0;
+    background: #16375e;
+    width: 60%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+
+.detailsOffers th{
+background-color:#16375e;
+color: white;
+}
+.detailsOffers {
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  cursor: pointer;
+  
+}
+
+.detailsOffers td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.details{
+ 
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  box-shadow: 1px 1px 12px #555;
+  width: 50%;
+    position: relative;
+    margin: auto;
+   
+    background-color: white;
+    margin-top: 0px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    
+
+}
+.entete{
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: rgb(243, 243, 243);
+ font-weight: 800;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+#offresNumber{
+  
+  float: right;
+  margin-right: 15px;
+}
+#dispoMissions{
+  color: #16375e;
+  margin-left: 15px;
+}
+
+.mySlides{
+
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 10%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: 10%;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+/* On smaller screens, decrease text size */
+
+
+.left{
+  background-color: white;
+  padding: 15px;
+  width: 40%;
+  border-radius: 5px;
+  margin-left: 3%;
+  height: 50%;
+  box-shadow: 1px 1px 12px #555;
+}
+.left span{
+  color: #16375E;;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 1%;
+  margin: 0px;
+}
+.left p{
+  
+  margin-left: 8%;
+}
+.icon{
+  float: left;
+  width: 36px;
+  height: 36px;
+  margin-right: 1%;
+}
+
+.test{
+  width: 100%;
+  padding-top: 3%;
+margin-bottom: 20%;
+  display: flex;
+}
+.validate{
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin-right: 1%;
+  margin: auto;
+}
+
+
+
+
+
+
+.footer {
+  border-top: 1px solid #16375e;
+  
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  bottom: 0px;
+}
+.entreprise{
+  color: black;
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.entreprise p{
+ font-size: 15px;
+ font-weight: 400;
+ line-height: 1.2em;
+ 
+}
+
+.contact p{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2em;
+  
+ }
+
+.logoFooter{
+  width: 80px;
+  float: left;
+  height:100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+.logoSocial{
+
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.contact{
+  margin-left: 0px;
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+
+.contact a{
+  cursor: pointer;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid #16375e;
+}
+
+.topnav2{
+  display: none;
+  padding-bottom: 10px;
+  background-color: white;
+  border-bottom: 1px solid #16375e;
+}
+
+
+
+
+.logo{
+  width: 140px;
+  float: left;
+  height:auto;
+  margin-left: 20%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+
+#connexion {
+  float: left;
+  margin-left: 5%;
+  margin-top: 5px;
+  margin-top: 1.1em;
+ 
+
+}
+
+#btnCO{
+  width: 50%;
+  height: 20%;
+  margin-top: 1.1em;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+.popup-overlay {
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+
+height:100vh;
+z-index:1;
+background:rgba(0,0,0,0.5);
+display:none;
+}
+.popup {
+position:absolute;
+font-size: 20px;
+top:-150%;
+left:50%;
+transform:translate(-50%,-50%) scale(1.15);
+width:40%;
+background:white;
+text-align: center;
+z-index:2;
+opacity:0;
+box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+transition:transform 300ms ease-in-out,opacity 300ms ease-in-out;
+}
+body.showLoginForm .popup-overlay {
+display:block;
+}
+body.showLoginForm .popup {
+top:50%;
+opacity:1;
+transform:translate(-50%,-50%) scale(1);
+}
+.popup .popup-close {
+position:absolute;
+top:-10px;
+right:-10px;
+width:40px;
+height:40px;
+background:#555;
+color:#f5f5f5;
+font-size:25px;
+font-weight:600;
+text-align:center;
+border-radius:50%;
+cursor:pointer;
+}
+.popup .form .avatar {
+margin:30px 0px 20px;
+text-align:center;
+}
+.popup .form .avatar img {
+width:120px;
+border-radius:50%;
+}
+.message {
+margin: 15px 0 0;
+color: #b3b3b3;
+font-size: 12px;
+margin-bottom: 15px;
+}
+input {
+
+outline: 0;
+background: #f2f2f2;
+width: 80%;
+display: block;
+margin: auto;
+border: 0;
+margin-bottom: 15px;
+padding: 15px;
+box-sizing: border-box;
+font-size: 14px;
+border-radius: 5px;
+}
+
+
+#message{
+display: block;
+color: red; 
+}
+
+#inscription{
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#reponse{
+  display: block;
+  color: red;
+}
+
+
+
+.containerWHITE{
+width: 100%;
+height: 450px;
+}
+.introduction{
+width: 40%;
+height: 80%;
+margin-top: 10px;
+display: inline-block;
+margin-left: 15%;
+}
+
+.introduction h1{
+
+font-size: 39px;
+color: #F39200;
+font-family: "Suez One";
+
+}
+.introduction p{
+font-size: 24px;
+line-height: 1.2em;
+width: 300px;
+}
+
+
+
+#photoContainerWhite{ 
+height: 240px;
+max-width: 100%;
+margin-top: 20px;
+
+border: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.block2{
+display: inline;
+margin-left: 5px;
+}
+
+
+
+
+
+
+
+.containerORANGE{
+padding-top: 30px;
+padding-bottom: 30px;
+width: 100%;
+height: 700px;
+background-color: #F39200; 
+display: block;
+
+}
+
+.Introduction2{
+padding-top: 50px;
+padding-left: 20px;
+background-image: url(../photo/container1.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+
+text-align: left;
+margin: auto;
+width: 60%;
+height: 600px;
+background-color: #16375e;
+border-radius: 10px;
+}
+.Introduction2 h1{
+font-size: 39px;
+font-family: "Suez One", Sans-serif;
+font-weight: 600;
+letter-spacing: 1.6px;
+color: #F39200;
+margin-top: 30%;
+}
+.Introduction2 p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2em;
+ color: rgb(255, 255, 255);
+  text-align: left;
+  margin: 0px 0px 16px;
+  width: 50%;
+}
+
+
+.containerWHITE2{
+margin-top: 30px;
+width: 100%;
+height: 650px;
+
+
+
+
+
+}
+
+.Introduction3{
+padding-top: 50px;
+padding-left: 20px;
+background-image: url("../photo/container2.jpg");
+background-position: center center;
+  background-size: cover; 
+margin: auto;
+width: 60%;
+height: 600px;
+background-color: #16375e;
+border-radius: 10px;
+}
+.Introduction3 h1{
+font-size: 39px;
+font-family: "Suez One", Sans-serif;
+font-weight: 600;
+letter-spacing: 1.6px;
+margin-left: 55%;
+color: #F39200;
+}
+.Introduction3 p{
+
+
+
+text-align: right;
+  font-size: 20px;
+ 
+  font-weight: 400;
+  line-height: 1.2em;
+  color: rgb(255, 255, 255);
+  
+  margin-left: 50%;
+  width: 40%;
+}
+
+
+
+.containerBLUE{
+
+background-color: #16375e;
+}
+
+
+
+.logoFooter{
+width: 80px;
+float: left;
+height:100%;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 10px;
+}
+.logoSocial{
+
+width: 40px;
+height: 40px;
+margin-right: 15px;
+}
+
+.contact{
+margin-left: 0px;
+float: right;
+height: 100%;
+width: 30%;
+}
+
+.contact a{
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*////////////////////////////////////*/
+
+@media all and (max-device-width: 768px) {
+
+  .dropbtn {
+ 
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+     
+  }
+  
+  .dropdown {
+    background-color: white;
+    position: relative;
+    display: inline-block;
+  }
+
+
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    
+    width: 350px;
+ 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  .dropdown:hover .dropdown-content{
+      display: block;
+    }
+    .logo{
+  
+      margin-right: 30%;
+    }
+  
+    .dropdown-content a {
+      float: none;
+  text-transform: uppercase;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      height: 30%;
+      text-align: center;    
+    font-weight: 600;
+    color: #16375e;
+    font-size: 30px;
+    border-bottom: 1px solid #16375e;
+    }
+    .menu{
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+    }
+  .topnav{
+    display: none;
+  }
+  .topnav2{
+    height: 70px;
+    display: block;
+  }
+  #deco{
+    color: red;
+  }
+
+}
+
+
+
+@media all and (max-device-width: 425px) {
+  #membre{
+    margin: 0px;
+    float: none;
+    margin-left:none;
+  }
+  #deco{
+    margin: 0px;
+    float: none;
+    margin-left:none;
+
+  }
+  .containerNOVALIDATE{
+    font-size: 30px;
+    margin-top: 20%;
+    
+  }
+  .footer{
+    position: relative;
+  }
+  .test{
+    display: block;
+  }
+.dropbtn {
+
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+   
+}
+
+.dropdown {
+  background-color: white;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  right: 10px;
+  width: 600px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+  }
+  .logo{
+
+    margin-right: 30%;
+  }
+
+  .dropdown-content a {
+    float: none;
+text-transform: uppercase;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    height: 100px;
+    text-align: center;    
+  font-weight: 600;
+  color: #16375e;
+  font-size: 35px;
+  }
+  .menu{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  #deco{
+    color: red;
+  }
+.topnav{
+  display: none;
+}
+.topnav2{
+  height: 70px;
+  display: block;
+}
+.direction{
+
+border-bottom: 1px solid #16375e;
+}
+
+
+.logoFooter {
+width: 130px;
+height: 80%;
+}
+.logoSocial {
+width: 50px;
+height: 50px;
+}
+
+
+.left{
+
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+ 
+  margin: auto;
+}
+.left p{
+
+    font-size: 30px;
+}
+.left span{
+  font-size: 40px;
+  
+  font-weight: 700;
+}
+.slideshow-container {
+  margin-top: 60px;
+  width: 90%;
+}
+
+.prev, .next{
+  font-size: 50px;
+}
+.next{
+  right: 5%;
+}
+.prev{
+  left: 5%;
+}
+.detailsOffers {
+  
+  font-size: 27px;
+}
+
+.container h3, .container h4 {
+  
+  font-size: 25px;
+}
+.entreprise p{
+  font-size: 20px;
+  line-height: 1em;
+  width: 550px;
+}
+.contact{
+  width: 40%;
+}
+.contact p{
+  font-size: 20px;
+}
+
+}
+
+
+
+
+
+
+
+
